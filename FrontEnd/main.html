@@ -3,10 +3,123 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML 5 Boilerplate</title>
+    <title>Credit Card Pre-Approval Check</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-	<script src="index.js"></script>
-  </body>
+	  <script src="index.js"></script>
+
+    <section class="Title-Bar">
+      <h1 class = "Name">Credit Card Pre-Approval Check</h1>
+    </section>
+  
+    <section class="form">
+    <section class="fill-ins">
+    <p>Age: 
+      <input type="number" min="18" max="110" >
+    </p>
+    <p> Debt:
+      <input type="number">
+    </p>
+    <p> Years employed:
+      <input type="number" min="0" max="100">
+    </p>
+    <p> Credit Score:
+      <input type="number" min="300" max="850">
+    </p>
+    <p> ZIP Code:
+      <input type="number" min="0" max="99999">
+    </p>
+    <p> Income:
+      <input type="number">
+    </p>
+    </section>
+
+    <section class="dropdowns">
+    <p> Gender:
+      <select name="gender" id="gender">
+        <option value="m">Male</option>
+        <option value="f">Female</option>
+      </select>
+    </p>
+    <p> Married:
+      <select name="married" id="marriage">
+        <option value="single">Single</option>
+        <option value="married">Married</option>
+        <option value="divorced">Divorced</option>
+        <option value="widow">Widowed</option>
+      </select>
+    </p>
+    <p> Bank Customer:
+      <select name="Customer" id="Customer">
+        <option value="none">Not a customer</option>
+        <option value="customer">Customer</option>
+        <option value="other">Other</option>
+      </select>
+    </p>
+    <p> Education Level:
+      <select name="Education" id="Education">
+        <option value="none">No Schooling Completed</option>
+        <option value="uphschool">Up to High School</option>
+        <option value="somehschool">Some High School</option>
+        <option value="hschoolgrad">High School Graduate or Equivalent</option>
+        <option value="scollege">Some college</option>
+        <option value="trade">Trade/Technical/Vocational training</option>
+        <option value="associate">Assoiate Degree</option>
+        <option value="bachelors">Bachelor's Degree</option>
+        <option value="masters">Master's Degree</option>
+        <option value="professional">Professional Degree</option>
+        <option value="doctorate">Doctorate Degree</option>
+        <option value="phd">Ph.D. or higher</option>
+        <option value="othereducation">Other</option>
+        <option value="pntseducation">Preder not to state</option>
+      </select>
+    </p>
+    <p> Ethnicity:
+      <select name="Ethnicity" id="Ethnicity">
+        <option value="white">White/Caucasian</option>
+        <option value="black">Black or African American</option>
+        <option value="asian">Asian</option>
+        <option value="hispanic">Hispanic</option>
+        <option value="hpi">Hawaiian/Pacific Islander</option>
+        <option value="native">Native/Indigenous</option>
+        <option value="mixed">Multiracial</option>
+        <option value="otherethnicity">Other</option>
+        <option value="pntsethnicity">Prefer not to state</option>
+      </select>
+    </p>
+    <p> Prior Default:
+      <select name="prioDefault" id="prioDefault">
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+    </p>
+    <p> Employed:
+      <select name="Employed" id="Employed">
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+    </p>
+    <p> Driver's License:
+      <select name="licensed" id="licensed">
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+    </p>
+    <p> Citizenship:
+      <select name="Citizenship" id="Citizenship">
+        <option value="true">Citizen</option>
+        <option value="false">Not a Citizen</option>
+        <option value="temp">Visa/Greencard Holder</option>
+      </select>
+    </p>
+    </section>
+  </section>
+
+  <button type="button">Check for Qualification</button>
+
+  <section class="output">
+    *output text will go in this box*
+  </section>
+   </body>
 </html>
