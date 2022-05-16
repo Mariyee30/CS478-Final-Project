@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credit Card Pre-Approval Check</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
   </head>
   <body>
     <section class="Title-Bar">
       <h1 class="heading">Credit Card Pre-Approval Check</h1>
     </section>
 
-    <section class="form">
-      <form action="/apply" method="post" id="creditcardcheck">
+      <form action="/apply" method="post" id="creditcardcheck" class="inputform">
         <section class="fill-ins">
           <p>Age:<input name="Age" type="number" min="18" max="110"></p>
           <p>Debt:<input name="Debt" type="number"></p>
@@ -101,9 +100,8 @@
             </select>
           </p>
         </section>
-        <input type="submit" value="Check for Qualification">
       </form>
-    </section>
+      <input type="submit" value="Check for Qualification" class ="checkbutton">
 
     <section class="output">{{preapproval_status}}</section>
   </body>
