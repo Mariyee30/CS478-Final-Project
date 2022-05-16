@@ -1,0 +1,36 @@
+.heading {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* comment */
+
+.Title-Bar {
+   height: 10ch;
+   padding-top: 1ch;
+}
+
+body {
+    font-family: sans-serif;
+ }
+
+.form {
+    display: grid;
+}
+
+ .fill-ins {
+    grid-column-start: 1;
+ }
+
+ .dropdowns {
+    grid-column-start: 2;
+}
+
+.output {
+    text-align: center;
+    outline: 10px;
+    outline-color: black; 
+    outline-style: auto; 
+    height: 10ch; 
+    padding-top: 2rem;
+}
